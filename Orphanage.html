@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hope Haven Orphanage</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    /* Orange Theme Colors */
+    :root {
+      --main-orange: #ff7a00;
+      --light-orange: #ffe5cc;
+      --dark-orange: #cc6200;
+    }
+
+    body {
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: var(--main-orange);
+    }
+    .navbar a {
+      color: white !important;
+      font-weight: 500;
+    }
+    .navbar a:hover {
+      color: #fff5e6 !important;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=1600&q=80')
+        no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 1.25rem;
+    }
+    .btn-orange {
+      background-color: var(--main-orange);
+      color: white;
+      border: none;
+    }
+    .btn-orange:hover {
+      background-color: var(--dark-orange);
+    }
+
+    /* Section Titles */
+    .section-title {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 700;
+      color: var(--main-orange);
+    }
+
+    /* Cards */
+    .card {
+      border: none;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+
+    /* Statistics Section */
+    #stats .card {
+      background-color: var(--light-orange);
+      border-radius: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--dark-orange);
+      color: #fff;
+      padding: 2rem 0;
+    }
+    footer a {
+      color: #fff5e6;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Hope Haven</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stats">Statistics</a></li>
+          <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#help">How to Help</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <h1>Welcome to Hope Haven Orphanage</h1>
+      <p class="mt-3">A loving home for every child in need.</p>
+      <a href="#help" class="btn btn-orange btn-lg mt-4">Donate Now</a>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section id="mission" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Our Vision & Mission</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Our Vision</h4>
+          <p>
+            To create a world where every child grows with love, dignity, and opportunity.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h4>Our Mission</h4>
+          <p>
+            We strive to nurture, educate, and empower orphans, guiding them toward a bright and independent future filled with hope and confidence.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section id="stats" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="section-title">Our Family at a Glance</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm">
+            <h3 class="fw-bold text-orange" style="color: var(--dark-orange)">150+</h3>
+            <p>Children Supported</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm">
+            <h3 class="fw-bold text-orange" style="color: var(--dark-orange)">25</h3>
+            <p>Dedicated Staff Members</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm">
+            <h3 class="fw-bold text-orange" style="color: var(--dark-orange)">10+</h3>
+            <p>Community Programs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities Section -->
+  <section id="activities" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Our Activities & Programs</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img
+              src="https://images.unsplash.com/photo-1600962815726-457c6b4b0d47?auto=format&fit=crop&w=800&q=80"
+              class="card-img-top"
+              alt="Education"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-orange" style="color: var(--main-orange)">Education</h5>
+              <p class="card-text">
+                Providing quality education to every child to secure a better future.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img
+              src="https://images.unsplash.com/photo-1533228100843-5b2cde2f43f1?auto=format&fit=crop&w=800&q=80"
+              class="card-img-top"
+              alt="Sports"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-orange" style="color: var(--main-orange)">Sports & Fitness</h5>
+              <p class="card-text">
+                Encouraging physical health and teamwork through regular sports activities.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img
+              src="https://images.unsplash.com/photo-1573497019528-070d3cbd1f69?auto=format&fit=crop&w=800&q=80"
+              class="card-img-top"
+              alt="Art & Crafts"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-orange" style="color: var(--main-orange)">Art & Craft</h5>
+              <p class="card-text">
+                Promoting creativity and self-expression through art and craft sessions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Help Section -->
+  <section id="help" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">How You Can Help</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <p>
+            You can make a difference by donating, volunteering, or sponsoring a child.
+            Every contribution helps us bring joy and stability to our children's lives.
+          </p>
+          <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+            <a href="#" class="btn btn-orange">Donate</a>
+            <a href="#" class="btn btn-outline-warning">Volunteer</a>
+            <a href="#" class="btn btn-outline-dark">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Simple Contact Form -->
+      <form class="mt-5 col-md-6 mx-auto">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Your Name" required />
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Your Email" required />
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-orange w-100">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-1">📍 123 Hope Street, Lahore, Pakistan</p>
+      <p class="mb-1">📞 +92 300 1234567 | ✉️ info@hopehaven.org</p>
+      <p class="mt-3 mb-0">© 2025 Hope Haven Orphanage – All Rights Reserved.</p>
+      <a href="#home" class="d-block mt-2">Back to Top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Boots
